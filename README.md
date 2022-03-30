@@ -9,3 +9,5 @@ Ideally, students will be able to answer these things without having to look thi
 After creating their own github repo and connecting it to their RStudio, students should work through the questions provided in `LO1_review.html`. A template is provided (rename as lastname_firstname_L01.Rmd).
 
 Students will need to submit their knitted html file which should contain a link to their github repo. See canvas for submission details.
+
+this is a test
