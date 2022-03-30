@@ -27,6 +27,8 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 
 Explain the difference between supervised and unsupervised learning.
 
+**Answer:** Supervised learning is when there is an outcome variable 
+
 <br>
 
 ### Question 3 
@@ -80,11 +82,15 @@ Explain the difference between a regression and classification machine learning 
 
 When splitting the data, why is it useful to stratify by the outcome/target variable? 
 
+**Answer** It is useful to stratify by the outcome/target variable when there is a class imbalance in the target variable.
+
 <br>
 
 ### Question 7 
 
 Briefly describe how v-fold cross validation with repeats is used to estimate test RMSE. Also provide an explanation of why we use it. 
+
+**Answer:** We use v-fold cross validation
 
 <br>
 
