@@ -21,13 +21,18 @@ When completing the following questions ensure that that your solutions are clea
 
 Provide a brief outline/overview of the steps involved in a supervised machine learning process. Could provide this as a bulleted list. 
 
+**Answer:**
+ - choose and clean data set (remove NAs and any unnecessary variables)
+ - choose the algorithms 
+ FINISH
+
 <br>
 
 ### Question 2
 
 Explain the difference between supervised and unsupervised learning.
 
-**Answer:** Supervised learning is when there is an outcome variable 
+**Answer:** Supervised learning is when there is an outcome variable, and there are two sub-categories within supervised models. Regression models predict numeric outcome while classification models predict outcomes that are qualitative values. Unsupervised learning is when models learn patterns and characteristics of data, but do not have an outcome. This type of learning is used to understand relationships between variables without a clear relationship between predictors and an outcome. 
 
 <br>
 
@@ -35,11 +40,11 @@ Explain the difference between supervised and unsupervised learning.
 
 In general, we can classify a model by its purpose into 1 of the 3 categories below. Provide a brief description of the goals of these model classes.
 
-1. Descriptive Models: **YOUR DESCRIPTION**
+1. Descriptive Models: **YOUR DESCRIPTION** Describes and illustrates characteristics of data. The goal of descriptive models is to visually emphasize trends in a data set and illustrate specific patterns. 
 
-2. Inferential Models: **YOUR DESCRIPTION**
+2. Inferential Models: **YOUR DESCRIPTION** Inferential models output decisions for research questions or test specific hypotheses. They are typically used to produce a probabilistic output, like a p-value. 
 
-3. Predictive Models: **YOUR DESCRIPTION**
+3. Predictive Models: **YOUR DESCRIPTION** Predictive models produce accurate predictions for new data. The main goal is that the predicted values are close to the true values of the new data. 
 
 <br>
 
@@ -50,18 +55,23 @@ We can further describe/classify predictive models by how they were derived or d
 #### Part A
 What does it mean to be a mechanistic model?
 
+**Answer:** 
+Mechanistic models depend on assumptions, theory, and previous knowledge to predict what will happen in the real world. For example, when we predict the amount of drug in someone's body at a certain time, we have assumptions about how the drug is absorbed and eliminated. With this information, we can derive a model equation.
 
 #### Part B
 What does it mean to be an empirically driven model?
 
+**Answer:** Empirically driven models study real-world events to develop a theory and are created with more vague assumptions. 
 
 #### Part C
 How does the mechanistic and empirically driven model terminology relate to the parametric and nonparametric model terminology? 
 
+**Answer:** A parametric model is one where all the information that is needed to predict values from the current value is the parameters. A nonparametric model is one that does not conform to a normal distribution because it relies upon continuous data. Additionally, nonparametric models have parameters that are flexible and can vary. Parametric models are similar to mechanistic models, in that there are more rigid parameters and assumptions for both, while nonparametric models are similar to empirically driven models, because both have more vague assumptions and more flexible parameters. 
 
 #### Part D
 In general, is a mechanistic or empirically driven model easier to understand? Explain.
 
+**Answer:** 
 
 #### Part E
 How does mechanistic and empirically driven model terminology relate to the idea of model flexibility? That is, which would be more or less flexible than the other.
@@ -70,11 +80,15 @@ How does mechanistic and empirically driven model terminology relate to the idea
 #### Part F
 Describe the bias-variance trade-off when considering the use of a mechanistic or empirically driven model. 
 
+**Answer:** The bias-variance trade-off means that there is a tradeoff between the bias and variance - the higher the bias, the lower the variance. 
+
 <br>
 
 ### Question 5 
 
 Explain the difference between a regression and classification machine learning (ML) problems.
+
+**Answer:** These two problems differ in the outcomes that they output. Regression machine learning problems predict a numeric outcome, while classification problems predict an outcome that is an ordered or unordered set of qualitative values. 
 
 <br>
 
@@ -82,7 +96,7 @@ Explain the difference between a regression and classification machine learning 
 
 When splitting the data, why is it useful to stratify by the outcome/target variable? 
 
-**Answer** It is useful to stratify by the outcome/target variable when there is a class imbalance in the target variable.
+**Answer** It is useful to stratify by the outcome/target variable when there is a class imbalance in the target variable. This makes the distribution of the outcome variable among the testing and training data sets to be the same. As a result, training on the same population that is going to be tested will achieve better predictions.
 
 <br>
 
@@ -90,7 +104,7 @@ When splitting the data, why is it useful to stratify by the outcome/target vari
 
 Briefly describe how v-fold cross validation with repeats is used to estimate test RMSE. Also provide an explanation of why we use it. 
 
-**Answer:** We use v-fold cross validation
+**Answer:** V-fold cross validation with repeats is when the data is separated into V sets of approximately equal size (folds). All of the data is assigned to one of these folds. Some of the folds are used for assessment statistics, such as RMSE, and the remaining are substrate for the model. This continues for each fold until each model produces V sets of performance statistics. FINISH
 
 <br>
 
@@ -98,11 +112,15 @@ Briefly describe how v-fold cross validation with repeats is used to estimate te
 
 When might we use a bootstrap resampling procedure instead of v-fold cross validation to estimate test RMSE?
 
+**Answer:** We might use bootstrap resampling when we want performance estimates that have very low variance. 
+
 <br>
 
 ### Question 9 
 
 Briefly describe model tuning and why we use it.
+
+**Answer:** Model tuning is when you customize your models by changing the tuning parameters, such as the number of neighbors in K-nearest neighbors. We use model tuning because it provides optimized values for tuning parameters, which maximizes the model's predictive accuracy. 
 
 <br>
 
@@ -110,7 +128,11 @@ Briefly describe model tuning and why we use it.
 
 What are two common performance metrics when dealing with a regression ML problem?
 
+**Answer:** RMSE and R^2^ (R squared) are two common performance metrics when dealing with a regression ML problem. 
+
 What are two common performance metrics when dealing with a classification ML problem?
+
+**Answer:** Confusion matrix and the ROC curve/area under the ROC curve (AUC) are two common performance metrics when dealing with a classification ML problem.
 
 <br>
 
