@@ -22,9 +22,11 @@ When completing the following questions ensure that that your solutions are clea
 Provide a brief outline/overview of the steps involved in a supervised machine learning process. Could provide this as a bulleted list. 
 
 **Answer:**
- - choose and clean data set (remove NAs and any unnecessary variables)
- - choose the algorithms 
- FINISH
+- choose and clean data set (remove NAs and any unnecessary variables)
+- understand the data by doing an exploratory data analysis (EDA)
+- feature engineering: creating recipes with certain variables, etc
+- model tuning and selection: pick best combination of tuning model parameters
+- model evaluation: assess model's performance metrics 
 
 <br>
 
@@ -72,15 +74,17 @@ How does the mechanistic and empirically driven model terminology relate to the 
 In general, is a mechanistic or empirically driven model easier to understand? Explain.
 
 **Answer:** 
+A mechanistic driven model is easier to understand because it only needs a few input data points for a given prediction, whereas for an empirical model, the number of observations needed grows exponentially with the number of variables included. 
 
 #### Part E
 How does mechanistic and empirically driven model terminology relate to the idea of model flexibility? That is, which would be more or less flexible than the other.
 
+**Answer:** Mechanistic driven models are more flexible because we can make predictions outside of the range of previously used input values. This is not the case for empirical models, because there may be insufficient data for predicting outside the range of input values/extrapolating beyond. 
 
 #### Part F
 Describe the bias-variance trade-off when considering the use of a mechanistic or empirically driven model. 
 
-**Answer:** The bias-variance trade-off means that there is a tradeoff between the bias and variance - the higher the bias, the lower the variance. 
+**Answer:** The bias-variance trade-off means that there is a tradeoff between the bias and variance - the higher the bias, the lower the variance. For empirically driven models, there is a low variance and a high bias, as these models have a more biased fit, but do have better predictive power. Mechanistic driven models have a high variance and low bias, which means that they fit the curve too closely to a data set. 
 
 <br>
 
@@ -104,7 +108,7 @@ When splitting the data, why is it useful to stratify by the outcome/target vari
 
 Briefly describe how v-fold cross validation with repeats is used to estimate test RMSE. Also provide an explanation of why we use it. 
 
-**Answer:** V-fold cross validation with repeats is when the data is separated into V sets of approximately equal size (folds). All of the data is assigned to one of these folds. Some of the folds are used for assessment statistics, such as RMSE, and the remaining are substrate for the model. This continues for each fold until each model produces V sets of performance statistics. FINISH
+**Answer:** V-fold cross validation with repeats is when the data is separated into V sets of approximately equal size (folds). All of the data is assigned to one of these folds. Some of the folds are used for assessment statistics, such as RMSE, and the remaining are substrate for the model. This continues for each fold until each model produces V sets of performance statistics. (So for 3-fold cross validation then three models produce three sets of performance statistics.) We use v-fold cross validation because the average of the performance statistics has very good generalization properties. 
 
 <br>
 
@@ -112,7 +116,7 @@ Briefly describe how v-fold cross validation with repeats is used to estimate te
 
 When might we use a bootstrap resampling procedure instead of v-fold cross validation to estimate test RMSE?
 
-**Answer:** We might use bootstrap resampling when we want performance estimates that have very low variance. 
+**Answer:** We might use bootstrap resampling when we want performance estimates that have less variance. However this is a tradeoff as bootstrap resampling results in more bias. But v-fold cross validation has higher variance but less bias.  
 
 <br>
 
@@ -145,6 +149,8 @@ A political candidate's campaign has detailed voter history data for their const
 1. How would a voter's likelihood of support for the candidate change if they had personal contact with the candidate?
 
 Classify each question/problem as either prediction or inferential. Explain your reasoning for each.
+
+**Answer:** The first question that asks about how likely a voter will vote in favor of the candidate is a prediction question, because we are using a model to predict the outcomes, which is a percentage of how likely the voter will vote for the candidate. The second question that asks how a voter's likelihood of support for the candidate would change if they had personal contact with the candidate is an inferential question, because we are learning about the relationship between the predictor (personal contact or not) and response variable (likelihood of support changing).
 
 <br>
 
