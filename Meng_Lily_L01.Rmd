@@ -22,10 +22,15 @@ When completing the following questions ensure that that your solutions are clea
 Provide a brief outline/overview of the steps involved in a supervised machine learning process. Could provide this as a bulleted list. 
 
 **Answer:**
+
 - choose and clean data set (remove NAs and any unnecessary variables)
+
 - understand the data by doing an exploratory data analysis (EDA)
+
 - feature engineering: creating recipes with certain variables, etc
+
 - model tuning and selection: pick best combination of tuning model parameters
+
 - model evaluation: assess model's performance metrics 
 
 <br>
@@ -34,7 +39,7 @@ Provide a brief outline/overview of the steps involved in a supervised machine l
 
 Explain the difference between supervised and unsupervised learning.
 
-**Answer:** Supervised learning is when there is an outcome variable, and there are two sub-categories within supervised models. Regression models predict numeric outcome while classification models predict outcomes that are qualitative values. Unsupervised learning is when models learn patterns and characteristics of data, but do not have an outcome. This type of learning is used to understand relationships between variables without a clear relationship between predictors and an outcome. 
+**Answer:** Supervised learning is when there is an outcome variable, and there are two sub-categories within supervised models. Regression models predict numeric outcomes while classification models predict outcomes that are qualitative values. Unsupervised learning is when models learn patterns and characteristics of data, but do not have an outcome. This type of learning is used to understand relationships between variables without a clear relationship between predictors and an outcome. 
 
 <br>
 
@@ -73,13 +78,14 @@ How does the mechanistic and empirically driven model terminology relate to the 
 #### Part D
 In general, is a mechanistic or empirically driven model easier to understand? Explain.
 
-**Answer:** 
-A mechanistic driven model is easier to understand because it only needs a few input data points for a given prediction, whereas for an empirical model, the number of observations needed grows exponentially with the number of variables included. 
+**Answer:** Mechanistic driven models are easier to understand because it only needs a few input data points for a given prediction, whereas for an empirical model, the number of observations needed grows exponentially with the number of variables included. Additionally, we can make predictions outside of the range of previously used input values for mechanistic driven models. This is not the case for empirical models, because there may be insufficient data for predicting outside the range of input values/extrapolating beyond.  
+
 
 #### Part E
 How does mechanistic and empirically driven model terminology relate to the idea of model flexibility? That is, which would be more or less flexible than the other.
 
-**Answer:** Mechanistic driven models are more flexible because we can make predictions outside of the range of previously used input values. This is not the case for empirical models, because there may be insufficient data for predicting outside the range of input values/extrapolating beyond. 
+**Answer:** Empirical models are more flexible because they have more vague assumptions and more flexible parameters, while the parameters of mechanistic models contain all the information that is needed to predict values. Additionally, mechanistic models have more rigid parameters and assumptions. 
+
 
 #### Part F
 Describe the bias-variance trade-off when considering the use of a mechanistic or empirically driven model. 
@@ -156,4 +162,4 @@ Classify each question/problem as either prediction or inferential. Explain your
 
 ## Github Repo Link
 
-[YOUR GITHUB URL](TEXT FOR YOUR GITHUB URL){target="_blank"}
+[https://github.com/STAT301III/l01-review-lilymeng25.git]
